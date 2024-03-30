@@ -1,27 +1,41 @@
-//function that takes an array of numbers as input and returns a new array containing only prime numbers from the original array
-function PrimeNumberGenerator(arr) {
-  for (let count = 0; count < arr.length(); count++) {
+//program that takes an array as input and returns a new array containing only prime numbers from original array.
 
-    if (number === 1) {
+//function that check whether a number is prime or not
+function isItPrime(number) {
+    if (number <= 1) {
 
-      return number;
+      return false;
 
-    } 
+    }
+
+    for (let index = 2; index <= Math.sqrt(number); index++) {
+
+      if (number % index === 0) {
+
+        return false;
+
+      }
+
+    }
+
+    return true;
     
-    else {
+  }
+  
+  function PrimeNumberGenerator(arr) {
 
-      for (let index = 2; index < number; index++) {
+    let newArr = [];
+  
+    for (let index = 0; index < arr.length; index++) {
 
-        if (number % index === 0) {
+      if (isItPrime(arr[index])) {
 
-        } 
-        
-        else {
+        newArr.push(arr[index]);
 
-          return number;
-          
-        }
       }
     }
+  
+    return newArr;
   }
-}
+  
+  console.log(PrimeNumberGenerator([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));

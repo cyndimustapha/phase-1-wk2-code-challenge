@@ -1,17 +1,28 @@
 //function that takes a string as input and swaps the case of each caharacter
 function Swap(str){
 
-    for(let index = 0; index < str.length(); index++){
+    let words = str.split('');
 
-        if(character === character.toUpperCase()){
+    for(let index = 0; index < words.length; index++){
 
+        if(words[index] === words[index].toUpperCase()){
+
+            words[index] = words[index].toLowerCase();
 
         }
 
         else{
 
+            words[index] = words[index].toUpperCase();
+
         }
 
     }
 
+    let newStr = words.join('');
+
+    return newStr;
+
 }
+
+console.log(Swap('The Quick Brown Fox'))
