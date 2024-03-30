@@ -24,7 +24,7 @@ Git
 
 ### Installation instruction
 ```
-git clone
+git clone https://github.com/cyndimustapha/phase-1-wk2-code-challenge.git
 
 ```
 
