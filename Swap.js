@@ -1,4 +1,4 @@
-//function that takes a string as input and swaps the case of each caharacter
+//function that takes a string as input and swaps the case of each character
 function Swap(str){
 
     let words = str.split('');

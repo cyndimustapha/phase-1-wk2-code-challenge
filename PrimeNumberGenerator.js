@@ -2,13 +2,13 @@
 
 //function that check whether a number is prime or not
 function isItPrime(number) {
-    if (number <= 1) {
+  if (number <= 1) {
 
-      return false;
+    return false;
 
-    }
-
-    for (let index = 2; index <= Math.sqrt(number); index++) {
+  } 
+  else {
+    for (let index = 2; index < number; index++) {
 
       if (number % index === 0) {
 
@@ -19,23 +19,23 @@ function isItPrime(number) {
     }
 
     return true;
-    
   }
-  
-  function PrimeNumberGenerator(arr) {
+}
 
-    let newArr = [];
-  
-    for (let index = 0; index < arr.length; index++) {
+function PrimeNumberGenerator(arr) {
 
-      if (isItPrime(arr[index])) {
+  let newArr = [];
 
-        newArr.push(arr[index]);
+  for (let index = 0; index < arr.length; index++) {
 
-      }
+    if (isItPrime(arr[index])) {
+
+      newArr.push(arr[index]);
+      
     }
-  
-    return newArr;
   }
-  
-  console.log(PrimeNumberGenerator([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
+
+  return newArr;
+}
+
+console.log(PrimeNumberGenerator([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
