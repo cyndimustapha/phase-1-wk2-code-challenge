@@ -6,7 +6,7 @@
 
 ## SwapCase Function
 
-This is a javascript function that takes a string as input and swaps the case of each character. If uppercase, the character is changed to lowercase and viceversa.
+This is a javascript function that takes a string as input and swaps the case of each character. It splits the string into an array of characters, then iterates through each character in the array, converting uppercase letters to lowercase and vice versa, and finally joins the characters back into a string.
 
 ## Array Generator Function
 

@@ -1,29 +1,29 @@
 //function that takes a string as input and swaps the case of each character
 function Swap(str){
 
-    //split string into individual words
-    let words = str.split('');
+    //split string into an array of characters
+    let char = str.split('');
 
-    //iterate through each letter in a word
-    for(let index = 0; index < words.length; index++){
+    //iterate through each character in the array
+    for(let index = 0; index < char.length; index++){
 
-        //checking the case of each letter. If uppercase, swap to lowercase and viceversa.
-        if(words[index] === words[index].toUpperCase()){
+        //checking the case of each character. If uppercase, swap to lowercase and viceversa.
+        if(char[index] === char[index].toUpperCase()){
 
-            words[index] = words[index].toLowerCase();
+            char[index] = char[index].toLowerCase();
 
         }
 
         else{
 
-            words[index] = words[index].toUpperCase();
+            char[index] = char[index].toUpperCase();
 
         }
 
     }
 
-    //join the words back together to form a string
-    let newStr = words.join('');
+    //join the characters back together to form a string
+    let newStr = char.join('');
 
     //output
     return newStr;
